@@ -1,12 +1,13 @@
+
 import React from 'react'
-import Wts1 from '../assets/images/Wts1.png'
-import Wts3 from '../assets/images/Wts3.png'
+import Wts1 from '../src/assets/images/Wts1.png'
+import Wts3 from '../src/assets/images/Wts3.png'
 import { FaUtensils } from "react-icons/fa";
 import { FaStar } from "react-icons/fa";
 
-const Wts = () => {
+const Review = () => {
     return (
-        <section className='py-12 sm:py-16 md:py-20 lg:py-21 bg-white relative overflow-hidden'>
+        <section className='py-12 sm:py-16 md:py-20 lg:py-21 bg-white relative overflow-hidden mt-15'>
             <div className='container mx-auto px-4 sm:px-6 md:px-8 xl:px-12 relative  flex flex-col md:flex-row items-center
             gap-6 md:gap-8 lg:gap-12'>
                 {/* MOBILE CONTENT */}
@@ -64,4 +65,4 @@ const Wts = () => {
     )
 }
 
-export default Wts
+export default Review

@@ -1,11 +1,11 @@
 import React from 'react'
-import wws1 from "../assets/images/wws1.png"
-import wws2 from "../assets/images/wws2.png"
-import wws3 from "../assets/images/wws3.png"
+import wws1 from "../src/assets/images/wws1.png"
+import wws2 from "../src/assets/images/wws2.png"
+import wws3 from "../src/assets/images/wws3.png"
 
-const Wws = () => {
+const Services = () => {
     return (
-        <div className='w-full bg-white min-h-screen  to yellow-50 px-4 sm:px-6 lg:px-20 py-12 md:py-20 xl:px-24'>
+        <div className='w-full bg-white min-h-screen  to yellow-50 px-4 sm:px-6 lg:px-20 py-12 md:py-20 xl:px-24 mt-15'>
             <div className='mx-auto text-center max-w-7xl'>
                 <h2 className='text-2xl sm:text-3xl lg:text-4xl font-bold text-red-600 uppercase
                 font-poppins tracking-widest mb-3 animate-fade-in'>WHAT WE SERVE</h2>
@@ -50,7 +50,8 @@ const Wws = () => {
                 </div>
             </div>
         </div>
+
     )
 }
 
-export default Wws;
+export default Services

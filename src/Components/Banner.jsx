@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import Bannervideo from '../assets/images/Bannervideo.mp4'
 import '../Components/Global.css'
 import Bannerfood from '../assets/images/Bannerfood.png'
-// import BannerArrow from '../assets/images/BannerArrow.png'
-// import BannerClock from '../assets/images/BannerClock.png'
 import Bannersmall1 from '../assets/images/Bannersmall1.png'
 import Bannersmall2 from '../assets/images/Bannersmall2.png'
 import Bannersmall3 from '../assets/images/Bannersmall3.png'
@@ -16,7 +14,7 @@ const Banner = () => {
     const [showvideo, setShowvideo] = useState(false);
 
     return (
-        <div className='bg-white pt-12 md:pt-24 min-h-[500px] flex items-center'>
+        <div className='bg-white pt-12 md:pt-24 min-h-[800px] flex items-center'>
             {/* Video Model */}
             {showvideo && (<div className='fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4'>
                 <div className='bg-white p-4 md:p-8 rounded-lg w-full max-w-4xl relative'>

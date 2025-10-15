@@ -1,30 +1,27 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Banner from './Components/Banner'
-import Wws from './Components/Wws'
-import Om from './Components/Om'
-import Wts from './Components/Wts'
-import Footer from './Components/Footer'
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Home';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import Services from './Services';
+import Pricelist from './Pricelist';
+import Review from './Review';
+
 const App = () => {
   return (
-    <div className='min-h-screen flex flex-col overflow-x-hidden bg-gradient-to-r from-red-50 via-orange-50 to-yellow-50'>
-      <Navbar />
-      <br />
-      <main className='flex-1 w-full'>
-        <div className='w-full'>
-          <Banner />
-        </div>
-        <div className='w-full'>
-          <Wws />
-          <Om />
-          <Wts />
-        </div>
-      </main>
-      <div className='mt-auto'>
+    <BrowserRouter>
+      <div>
+        <Navbar /> {/* Har page pe show hoga */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path='service' element={<Services />} ></Route>
+          <Route path='price' element={<Pricelist/>}></Route>
+          <Route path='review' element={<Review/>}></Route>
+        </Routes>
         <Footer />
       </div>
-    </div>
-  )
-}
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
